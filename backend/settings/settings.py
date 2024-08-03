@@ -21,6 +21,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
     'corsheaders',
+    'apps.accounts',
 ]
 
 MIDDLEWARE = [
@@ -114,7 +115,7 @@ SIMPLE_JWT = {
     'AUTH_HEADER_TYPES': ('JWT',),
     'AUTH_TOKEN_CLASSES': ('rest_framework_simplejwt.tokens.AccessToken',),
     'ALGORITHM': 'HS256',
-    'SIGNING_KEY': 'your-signing-key',
+    'SIGNING_KEY': 'key',
     'VERIFYING_KEY': None,
     'AUDIENCE': None,
     'ISSUER': None,
